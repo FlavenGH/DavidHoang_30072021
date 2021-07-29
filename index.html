@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>
+      <img src="images/logo/Reservia.svg" alt="Logo" />
+      <nav>
+        <ul>
+          <li><a href="">Hébergements</a></li>
+          <li><a href="">Activités</a></li>
+        </ul>
+        <button onclick="window.location.href = '';">S'inscrire</button>
+      </nav>
+      <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+      <h3>En plein centre ville ou en pleine nature</h3>
+      <div class="topnav">
+        <input type="text" placeholder="Ville ou pays" />
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </div>
+      <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Filtres</button>
+        <button class="btn" onclick="filterSelection('cars')"> Économique </button>
+        <button class="btn" onclick="filterSelection('animals')">Familial</button>
+        <button class="btn" onclick="filterSelection('fruits')"> Romantique</button>
+        <button class="btn" onclick="filterSelection('colors')"> Animaux autorisés</button>
+      </div>
+    </header>
+  </body>
+</html>
