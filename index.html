@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html>
+  <script
+    src="https://kit.fontawesome.com/9ba449c5de.js"
+    crossorigin="anonymous"
+  ></script>
   <body>
     <header>
       <img src="images/logo/Reservia.svg" alt="Logo" />
@@ -13,15 +17,32 @@
       <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
       <h3>En plein centre ville ou en pleine nature</h3>
       <div class="topnav">
+        <i class="fas fa-map-marker-alt"></i>
         <input type="text" placeholder="Ville ou pays" />
         <button type="submit"><i class="fa fa-search"></i></button>
       </div>
       <div id="myBtnContainer">
-        <button class="btn active" onclick="filterSelection('all')"> Filtres</button>
-        <button class="btn" onclick="filterSelection('cars')"> Économique </button>
-        <button class="btn" onclick="filterSelection('animals')">Familial</button>
-        <button class="btn" onclick="filterSelection('fruits')"> Romantique</button>
-        <button class="btn" onclick="filterSelection('colors')"> Animaux autorisés</button>
+        <button class="btn active" onclick="filterSelection('all')">
+          Filtres
+        </button>
+        <i class="fas fa-money-bill-wave"></i>
+        <button class="btn" onclick="filterSelection('eco')">Économique</button>
+        <i class="fas fa-child"></i>
+        <button class="btn" onclick="filterSelection('family')">
+          Familial
+        </button>
+        <i class="fas fa-heart"></i>
+        <button class="btn" onclick="filterSelection('love')">
+          Romantique
+        </button>
+        <i class="fas fa-dog"></i>
+        <button class="btn" onclick="filterSelection('animals')">
+          Animaux autorisés
+        </button>
+      </div>
+      <div id="info">
+        <i class="fas fa-info"></i>
+        Plus de 500 logements sont disponibles dans cette ville
       </div>
     </header>
   </body>
