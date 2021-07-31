@@ -1,49 +1,155 @@
 <!DOCTYPE html>
 <html>
-  <script
-    src="https://kit.fontawesome.com/9ba449c5de.js"
-    crossorigin="anonymous"
-  ></script>
+  <head>
+    <title>Maquette Projet 2</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway"/>" 
+    <script
+      src="https://kit.fontawesome.com/9ba449c5de.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
   <body>
     <header>
       <img src="images/logo/Reservia.svg" alt="Logo" />
       <nav>
-        <ul>
-          <li><a href="">Hébergements</a></li>
-          <li><a href="">Activités</a></li>
+        <ul class="main-nav-bar">
+          <div class="nav-bar">
+            <li><a href="#search-result-accomodation-block">Hébergements</a></li>
+            <li><a href="#search-result-activities-block">Activités</a></li>
+          </div>
+          <div class="register">
+            <li><a href="">S'inscrire</a></li>
+          </div>
         </ul>
-        <button onclick="window.location.href = '';">S'inscrire</button>
       </nav>
-      <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-      <h3>En plein centre ville ou en pleine nature</h3>
-      <div class="topnav">
-        <i class="fas fa-map-marker-alt"></i>
-        <input type="text" placeholder="Ville ou pays" />
-        <button type="submit"><i class="fa fa-search"></i></button>
-      </div>
-      <div id="myBtnContainer">
-        <button class="btn active" onclick="filterSelection('all')">
-          Filtres
-        </button>
-        <i class="fas fa-money-bill-wave"></i>
-        <button class="btn" onclick="filterSelection('eco')">Économique</button>
-        <i class="fas fa-child"></i>
-        <button class="btn" onclick="filterSelection('family')">
-          Familial
-        </button>
-        <i class="fas fa-heart"></i>
-        <button class="btn" onclick="filterSelection('love')">
-          Romantique
-        </button>
-        <i class="fas fa-dog"></i>
-        <button class="btn" onclick="filterSelection('animals')">
-          Animaux autorisés
-        </button>
-      </div>
-      <div id="info">
-        <i class="fas fa-info"></i>
-        Plus de 500 logements sont disponibles dans cette ville
-      </div>
     </header>
+    <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+    <h3>En plein centre ville ou en pleine nature</h3>
+    <div class="topnav">
+      <i class="fas fa-map-marker-alt"></i>
+      <input type="text" placeholder="Ville ou pays" />
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </div>
+    Filtres
+    <div class="filter-img"><i class="fas fa-money-bill-wave"></i></div>
+    <button class="btn" onclick="filterSelection('eco')">Économique</button>
+    <div class="filter-img"><i class="fas fa-child"></i></div>
+    <button class="btn" onclick="filterSelection('family')">Familial</button>
+    <div class="filter-img"><i class="fas fa-heart"></i></div>
+    <button class="btn" onclick="filterSelection('love')">Romantique</button>
+    <div class="filter-img"><i class="fas fa-dog"></i></div>
+    <button class="btn" onclick="filterSelection('animals')">
+      Animaux autorisés
+    </button>
+    <div id="info">
+      <i class="fas fa-info"></i>
+      Plus de 500 logements sont disponibles dans cette ville
+    </div>
+    <!-- Partie concernant les hébergements les plus populaires -->
+    <article>
+      <section class="main-search-result">
+        <div class="search-result-block block--most-popular">
+          <h2>Les plus populaires</h2>
+          <section>
+          <p><h3>Hôtel Le soleil du matin</h3>
+          Nuit à partir de 128€</p>
+        </section>
+        <section>
+          <p><h3>Au coeur de l'eau Chambres d'hôtes</h3>
+          Nuit à partir de 71€</p>
+        </section>
+        <section>
+          <p><h3>Hôtel Tout bleu et Blanc</h3>
+          Nuit à partir de 68€</p>
+        </section>
+        </div>
+        <!-- Partie concernant les hébergements --> 
+        <div class id="search-result-accomodation-block">
+          <h2>Hébergements à Marseille</h2>
+          <section>
+          <p>
+            <h3>Auberge la Cannebière</h3>
+            Nuit à partir de 25€
+          </p>
+        </section>
+        <section>
+          <p>
+            <h3>Hôtel du port</h3>
+            Nuit à partir de 52€
+          </p>
+        </section>
+        <section>
+          <p>
+            <h3>Hôtel les mouettes</h3>
+            Nuit à partir de 76€
+          </p>
+        </section>
+        <section>
+          <p>
+            <h3>Hôtel de la mer</h3>
+            Nuit à partir de 46€
+          </p>
+        </section>
+        <section>
+          <p>
+            <h3>Auberge Le Panier</h3>
+            Nuit à partir de 23€
+          </p>
+        </section>
+        <section>
+          <p>
+            <h3>Hôtel chez Amina</h3>
+            Nuit à partir de 96€
+          </p>
+        </section>
+        </div>
+      <h3>Afficher plus</h3>
+    </section>
+  </article>
+      <article>
+      <div class id="search-result-activities-block">
+        <h2>Activités à Marseille</h2>
+        <section>
+          <h3><p>Vieux port</p></h3>
+        </section>
+        <section>
+          <h3><p>Fort de Pomègues</p></h3>
+        </section>
+        <section>
+          <h3><p>Îles du Frioul</p></h3>
+        </section>
+        <section>
+          <h3><p>Parc National des Calanques</p></h3>
+        </section>
+        <section>
+          <h3><p>Notre-Dame-de-la-Garde</p></h3>
+        </section>
+        <section>
+          <h3><p>Parc Longchamp</p></h3>
+        </section>
+      </div>
+    </article>
+    <!-- Partie concernant le footer -->
+    <section class="footer">
+      <footer>
+        <h2>A propos</h2>
+        <ul>
+          <li>Fonctionnement du site</li>
+          <li>Conditions générales de vente</li>
+          <li>Données et confidentialité</li>
+        </ul>
+        <h2>Nos hébergements</h2>
+        <ul>
+          <li>Charte qualité</li>
+          <li>Soumettre votre hôtel</li>
+        </ul>
+        <h2>Assistance</h2>
+        <ul>
+          <li>Centre d'aide</li>
+          <li>Nous contacter</li>
+        </ul>
+      </footer>
+    </section>
   </body>
 </html>
