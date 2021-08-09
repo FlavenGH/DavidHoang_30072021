@@ -1,155 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reservia</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway"/> 
+    <!-- kit font awesome-->
     <script
       src="https://kit.fontawesome.com/9ba449c5de.js"
       crossorigin="anonymous"
     ></script>
+    <!-- font -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header>
-      <img src="images/logo/Reservia.svg" alt="Logo" />
-      <nav>
-        <ul class="main-nav-bar">
-          <div class="nav-bar">
-            <li><a href="#search-result-accomodation-block">Hébergements</a></li>
-            <li><a href="#search-result-activities-block">Activités</a></li>
+    <div class="padding">
+      <header>
+        <nav class="">
+          <div class="">
+            <img src="images/logo/Reservia.svg" alt="Logo" />
           </div>
-          <div class="register">
-            <li><a href="">S'inscrire</a></li>
+          <a href="#hebergements" class="hebergements">Hébergements</a>
+          <a href="#activites" class="activites">Activités</a>
+          <a href="#" class="inscrire">S'inscrire</a>
+        </nav>
+        <h1 class="trouvez">
+          Trouvez votre hébergement pour des vacances de rêve
+        </h1>
+        <p class="enplein">En plein centre ville ou en pleine nature</p>
+        <div class="barre_recherche">
+          <div class="icone_map">
+            <i class="fas fa-map-marker-alt"></i>
           </div>
-        </ul>
-      </nav>
-    </header>
-    <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-    <h3>En plein centre ville ou en pleine nature</h3>
-    <div class="topnav">
-      <i class="fas fa-map-marker-alt"></i>
-      <input type="text" placeholder="Ville ou pays" />
-      <button type="submit"><i class="fa fa-search"></i></button>
-    </div>
-    Filtres
-    <div class="filter-img"><i class="fas fa-money-bill-wave"></i></div>
-    <button class="btn" onclick="filterSelection('eco')">Économique</button>
-    <div class="filter-img"><i class="fas fa-child"></i></div>
-    <button class="btn" onclick="filterSelection('family')">Familial</button>
-    <div class="filter-img"><i class="fas fa-heart"></i></div>
-    <button class="btn" onclick="filterSelection('love')">Romantique</button>
-    <div class="filter-img"><i class="fas fa-dog"></i></div>
-    <button class="btn" onclick="filterSelection('animals')">
-      Animaux autorisés
-    </button>
-    <div id="info">
-      <i class="fas fa-info"></i>
-      Plus de 500 logements sont disponibles dans cette ville
-    </div>
-    <!-- Partie concernant les hébergements les plus populaires -->
-    <article>
-      <section class="main-search-result">
-        <div class="search-result-block block--most-popular">
-          <h2>Les plus populaires</h2>
-          <section>
-          <p><h3>Hôtel Le soleil du matin</h3>
-          Nuit à partir de 128€</p>
-        </section>
-        <section>
-          <p><h3>Au coeur de l'eau Chambres d'hôtes</h3>
-          Nuit à partir de 71€</p>
-        </section>
-        <section>
-          <p><h3>Hôtel Tout bleu et Blanc</h3>
-          Nuit à partir de 68€</p>
-        </section>
+          <input type="text" placeholder="Marseille, France" />
+          <button type="submit">
+            <span class="logo_recherche"><i class="fas fa-search"></i></span
+            ><span class="texte_recherche">Rechercher</span>
+          </button>
         </div>
-        <!-- Partie concernant les hébergements --> 
-        <div class id="search-result-accomodation-block">
-          <h2>Hébergements à Marseille</h2>
-          <section>
-          <p>
-            <h3>Auberge la Cannebière</h3>
-            Nuit à partir de 25€
-          </p>
-        </section>
-        <section>
-          <p>
-            <h3>Hôtel du port</h3>
-            Nuit à partir de 52€
-          </p>
-        </section>
-        <section>
-          <p>
-            <h3>Hôtel les mouettes</h3>
-            Nuit à partir de 76€
-          </p>
-        </section>
-        <section>
-          <p>
-            <h3>Hôtel de la mer</h3>
-            Nuit à partir de 46€
-          </p>
-        </section>
-        <section>
-          <p>
-            <h3>Auberge Le Panier</h3>
-            Nuit à partir de 23€
-          </p>
-        </section>
-        <section>
-          <p>
-            <h3>Hôtel chez Amina</h3>
-            Nuit à partir de 96€
-          </p>
-        </section>
-        </div>
-      <h3>Afficher plus</h3>
-    </section>
-  </article>
-      <article>
-      <div class id="search-result-activities-block">
-        <h2>Activités à Marseille</h2>
-        <section>
-          <h3><p>Vieux port</p></h3>
-        </section>
-        <section>
-          <h3><p>Fort de Pomègues</p></h3>
-        </section>
-        <section>
-          <h3><p>Îles du Frioul</p></h3>
-        </section>
-        <section>
-          <h3><p>Parc National des Calanques</p></h3>
-        </section>
-        <section>
-          <h3><p>Notre-Dame-de-la-Garde</p></h3>
-        </section>
-        <section>
-          <h3><p>Parc Longchamp</p></h3>
-        </section>
-      </div>
-    </article>
-    <!-- Partie concernant le footer -->
-    <section class="footer">
-      <footer>
-        <h2>A propos</h2>
-        <ul>
-          <li>Fonctionnement du site</li>
-          <li>Conditions générales de vente</li>
-          <li>Données et confidentialité</li>
-        </ul>
-        <h2>Nos hébergements</h2>
-        <ul>
-          <li>Charte qualité</li>
-          <li>Soumettre votre hôtel</li>
-        </ul>
-        <h2>Assistance</h2>
-        <ul>
-          <li>Centre d'aide</li>
-          <li>Nous contacter</li>
-        </ul>
-      </footer>
-    </section>
+        <nav class="filter_bar">
+          <h2>Filtres</h2>
+          <ul>
+            <li class="container_filter">
+              <div>
+                <i class="fas fa-money-bill-wave"></i>
+              </div>
+              <a href="#">Économique</a>
+            </li>
+            <li class="container_filter">
+              <div>
+                <i class="fas fa-child"></i>
+              </div>
+              <a href="#">Familial</a>
+            </li>
+            <li class="container_filter">
+              <div>
+                <i class="fas fa-heart"></i>
+              </div>
+              <a href="#">Romantique</a>
+            </li>
+            <li class="container_filter">
+              <div>
+                <i class="fas fa-dog"></i>
+              </div>
+              <a href="#">Animaux autorisés</a>
+            </li>
+          </ul>
+        </nav>
+        <p class="information">
+          <i class="fas fa-info"></i> Plus de 500 logements sont disponibles
+          dans cette ville
+        </p>
+      </header>
+    </div>
   </body>
 </html>
