@@ -105,12 +105,12 @@ a {
 
 /* TEXT UNDER NAVIGATION BAR */
 
-.trouvez {
+.title_nav {
   margin-bottom: 0;
   font-size: 1.5rem;
 }
 
-.enplein {
+.subtitle_nav {
   font-size: 1.1rem;
   margin-top: 0.625rem;
   margin-bottom: 1.875rem;
